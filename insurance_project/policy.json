@@ -1,0 +1,33 @@
+[
+  {
+    "company_name": "Star Health Insurance",
+    "scheme_name": "Family Health Optima",
+    "coverage": "5 Lakhs",
+    "premium": "Rs 7,000/year",
+    "features": [
+      "Cashless hospitalization",
+      "Pre and post-hospitalization cover",
+      "Maternity benefits"
+    ]
+  },
+  {
+    "company_name": "New India Assurance",
+    "scheme_name": "Mediclaim Policy",
+    "coverage": "2 Lakhs",
+    "premium": "Rs 3,500/year",
+    "features": [
+      "Ambulance charges",
+      "Pre-existing diseases after 4 years"
+    ]
+  },
+  {
+    "company_name": "sayan's Dudhphuli Assurance",
+    "scheme_name": "Mediclaim Policy",
+    "coverage": "10 Lakhs",
+    "premium": "Rs 12,000/year",
+    "features": [
+      "Ambulance charges",
+      "Pre-existing diseases after 4 years"
+    ]
+  }
+]
