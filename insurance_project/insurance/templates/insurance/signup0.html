@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Signup UI</title>
+<link rel="stylesheet" href="style2.css" />
+</head>
+<body>
+  <main class="background-container" role="main" aria-label="Signup form on mountain background">
+    <form class="login-form" action="#" method="POST" novalidate aria-describedby="register-text">
+      <h2>Sign Up</h2>
+
+      <div class="input-group">
+        <input type="text" id="name" name="name" placeholder="Full Name" required aria-required="true" aria-label="Full Name" />
+        <svg class="icon" viewBox="0 0 24 24"><path d="M12 12c2.7 0 4.8-2.1 4.8-4.8S14.7 2.4 12 2.4 7.2 4.5 7.2 7.2 9.3 12 12 12zm0 2.4c-3.2 0-9.6 1.6-9.6 4.8v2.4h19.2v-2.4c0-3.2-6.4-4.8-9.6-4.8z"/></svg>
+      </div>
+
+      <div class="input-group">
+        <input type="email" id="email" name="email" placeholder="Email ID" required aria-required="true" aria-label="Email ID" />
+        <svg class="icon" viewBox="0 0 24 24"><path d="M1.5 4.5h21v15h-21z" fill="none"/><path d="M3 6.75v10.5h18V6.75L12 13.5 3 6.75zM12 12L21 6H3l9 6z" /></svg>
+      </div>
+
+      <div class="input-group">
+        <input type="password" id="password" name="password" placeholder="Password" required aria-required="true" aria-label="Password" />
+        <svg class="icon" viewBox="0 0 24 24"><path d="M12 17a2 2 0 1 0 0-4 2 2 0 0 0 0 4zm6-5v-4a6 6 0 1 0-12 0v4a3 3 0 0 0-3 3v5h18v-5a3 3 0 0 0-3-3zm-8-4a4 4 0 1 1 8 0v4H10v-4z"/></svg>
+      </div>
+
+      <div class="input-group">
+        <input type="password" id="confirm-password" name="confirm-password" placeholder="Confirm Password" required aria-required="true" aria-label="Confirm Password" />
+        <svg class="icon" viewBox="0 0 24 24"><path d="M12 17a2 2 0 1 0 0-4 2 2 0 0 0 0 4zm6-5v-4a6 6 0 1 0-12 0v4a3 3 0 0 0-3 3v5h18v-5a3 3 0 0 0-3-3zm-8-4a4 4 0 1 1 8 0v4H10v-4z"/></svg>
+      </div>
+
+      <div class="options-row">
+        <label for="terms">
+          <input type="checkbox" id="terms" name="terms" required />
+          I accept the Terms
+        </label>
+      </div>
+
+      <button type="submit" class="login-btn">Sign Up</button>
+
+      <div id="register-text" class="register-text">
+        Already have an account? <a href="#" tabindex="0">Login</a>
+      </div>
+    </form>
+  </main>
+</body>
+</html>

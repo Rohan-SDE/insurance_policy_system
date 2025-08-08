@@ -1,0 +1,226 @@
+/* Reset & base */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+body, html {
+  margin: 0;
+  height: 100%;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(180deg, #b3a9de 0%, #7f7fdd 100%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Container */
+.background-container {
+  position: relative;
+  width: 90vw;
+  height: 95%;
+  max-width: 600px;
+  aspect-ratio: 16 / 10;
+  border-radius: 25px;
+  overflow: hidden;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+}
+
+.background-container::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(90deg, #b3a9de 0%, #7f7fdd 100%, #b3a9de 0%);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center bottom;
+  opacity: 0.7;
+  pointer-events: none;
+  border-radius: 25px;
+}
+
+/* Form */
+form.login-form {
+  position: relative;
+  background: rgba(115, 90, 224, 0.8);
+  padding: 2.5rem 2rem 2rem 2rem;
+  border-radius: 15px;
+  box-shadow: 0 0 0 1px rgba(255 255 255 / 0.35);
+  max-width: 320px;
+  width: 100%;
+  border: 1px solid rgba(255 255 255 / 0.5);
+}
+
+form.login-form h2 {
+  margin: 0 0 1.4rem;
+  font-weight: 700;
+  font-size: 1.8rem;
+  text-align: center;
+}
+
+.input-group {
+  position: relative;
+  margin-bottom: 1.3rem;
+}
+
+.input-group input {
+  width: 100%;
+  padding: 0.9rem 2.8rem 0.9rem 1rem;
+  border-radius: 9999px;
+  border: 1.5px solid rgba(255 255 255 / 0.6);
+  background: rgba(255 255 255 / 0.15);
+  color: white;
+  font-size: 1rem;
+  transition: border-color 0.3s ease, background 0.3s ease;
+}
+
+.input-group input::placeholder {
+  color: rgba(255 255 255 / 0.75);
+}
+
+.input-group input:focus {
+  outline: none;
+  background: rgba(255 255 255 / 0.3);
+  border-color: #d2cfff;
+}
+
+.input-group .icon {
+  position: absolute;
+  right: 1rem;
+  top: 50%;
+  transform: translateY(-50%);
+  pointer-events: none;
+  fill: white;
+  opacity: 0.85;
+  width: 18px;
+  height: 18px;
+}
+
+.options-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.8rem;
+  color: rgba(255 255 255 / 0.85);
+  margin-bottom: 1rem;
+}
+
+.options-row label {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.options-row input[type="checkbox"] {
+  margin-right: 0.35rem;
+  cursor: pointer;
+  accent-color: #7d6ade;
+  width: 16px;
+  height: 16px;
+}
+
+.options-row a {
+  color: #d6d0ff;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.options-row a:hover,
+.options-row a:focus {
+  color: white;
+  outline: none;
+}
+
+button.login-btn {
+  width: 100%;
+  padding: 0.8rem 0;
+  border: none;
+  border-radius: 9999px;
+  background: white;
+  color: #5748d9;
+  font-weight: 600;
+  font-size: 1rem;
+  cursor: pointer;
+  box-shadow:
+    0 3px 6px rgb(87 72 217 / 0.45),
+    inset 0 -4px 6px rgb(87 72 217 / 0.3);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+button.login-btn:hover,
+button.login-btn:focus {
+  background-color: #4e40c6;
+  color: white;
+  outline: none;
+}
+
+.register-text {
+  margin-top: 1.5rem;
+  text-align: center;
+  font-size: 0.85rem;
+  color: rgba(255 255 255 / 0.85);
+}
+
+.register-text a {
+  color: white;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.register-text a:hover,
+.register-text a:focus {
+  text-decoration: none;
+  outline: none;
+}
+
+@media (max-width: 400px) {
+  .background-container {
+    padding: 1.5rem;
+  }
+  form.login-form {
+    max-width: 100%;
+    padding: 2rem 1.5rem 1.5rem 1.5rem;
+  }
+}
+
+/* Social Login */
+.social-login {
+  text-align: center;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.social-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  font-size: 20px;
+  background-color: rgba(255, 255, 255, 0.15);
+  color: white;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.social-icon:hover {
+  background-color: rgba(255, 255, 255, 0.35);
+  transform: scale(1.1);
+}
+
+/* Optional distinct color styles */
+.google { background-color: #494646; }
+.facebook { background-color: #494646; }
+.instagram { background-color: #494646; }
+.twitter { background-color: #494646; }

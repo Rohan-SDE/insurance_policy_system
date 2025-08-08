@@ -1,0 +1,227 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>AI Medical Diagnostic Assistant</title>
+  <link rel="stylesheet" href="{% static 'homestyle.css' %}" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+  <header class="main-header bg-body-tertiary py-2">
+  <div class="container d-flex justify-content-between align-items-center flex-wrap">
+
+    <!-- Logo -->
+    <div class="d-flex align-items-center gap-2">
+      <span class="logo-icon fw-bold px-2 py-1 bg-dark text-white rounded">CT</span>
+      <span class="logo-text fs-5">CT Read</span>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="d-flex gap-2 flex-wrap">
+      <a href="#" role="button" class="btn btn-outline-primary">Home</a>
+      <a href="#" role="button" class="btn btn-outline-primary">About</a>
+      <a href="#" role="button" class="btn btn-outline-primary">Policy</a>
+      <a href="#scrollspyHeading1" role="button" class="btn btn-outline-primary">Support</a>
+      <a href="#scrollspyHeading2" role="button" class="btn btn-outline-primary">Feedback</a>
+    </nav>
+
+    <!-- Controls -->
+    <div class="d-flex align-items-center gap-3 mt-2 mt-md-0">
+      <span class="credit bg-danger text-white px-3 py-1 rounded-pill fw-bold">
+        Credit: <span class="credit-zero">150</span>
+      </span>
+      <a href="/login" class="login-btn btn btn-outline-primary">Login</a>
+    </div>
+    
+  </div>
+</header>
+
+  <main class="hero">
+    <h1>AI-Powered X-ray Interpretation</h1>
+    <h2><span class="highlight">Clear Answers Within Minutes</span></h2>
+    <p class="subheading">Helping 10,000+ Patients Better Understand Their X-rays</p>
+    <p class="description">
+      Upload your X-ray images and get instant, AI-powered analysis and interpretation.
+      Understand your X-rays quickly and easily, without medical expertise.
+    </p>
+    <a href="/login" class="cta-btn">Try 100% Free Registration</a>
+  </main>
+
+  <!-- Our Services Section -->
+  <section class="services">
+    <div class="services-header">
+      <div>
+        <h2>Our Services</h2>
+        <p class="services-subtitle">
+          Predictive Health Risk Assessments Our AI Analyzes Individual Health Data To Calculate The Risk Percentages For:
+        </p>
+      </div>
+      <a href="#" class="services-btn">More Services ➜</a>
+    </div>
+
+    <div class="services-grid">
+      <div class="service-card">
+        <div class="icon">🩺</div>
+        <h3>Diabetes</h3>
+        <p>Helps detect early signs of diabetes by analyzing health data and delivering personalized risk assessments with precision.</p>
+        <a href="#">Learn More ➜</a>
+      </div>
+      <div class="service-card">
+        <div class="icon">❤️‍🩹</div>
+        <h3>Heart Disease</h3>
+        <p>Identifies potential heart disease risks early through advanced predictive analytics, enabling faster diagnosis and intervention.</p>
+        <a href="#">Learn More ➜</a>
+      </div>
+      <div class="service-card">
+        <div class="icon">🧠</div>
+        <h3>Stroke</h3>
+        <p>Detects stroke risk factors by analyzing critical health indicators, providing early warnings before symptoms appear.</p>
+        <a href="#">Learn More ➜</a>
+      </div>
+      <div class="service-card">
+        <div class="icon">😟</div>
+        <h3>Depression And Mental Health Conditions</h3>
+        <p>Our AI delivers early insights that empower providers and patients to address mental health challenges proactively and support overall well-being.</p>
+        <a href="#">Learn More ➜</a>
+      </div>
+      <div class="service-card">
+        <div class="icon">🩻</div>
+        <h3>Kidney Disease</h3>
+        <p>Evaluates key health metrics to identify early signs of kidney disease, helping to prevent progression before symptoms become severe.</p>
+        <a href="#">Learn More ➜</a>
+      </div>
+      <div class="service-card">
+        <div class="icon">🔲</div>
+        <h3>And So Much More</h3>
+        <p>CareCast.ai’s technology extends beyond individual conditions, offering predictive insights across a wide range of health risks.</p>
+        <a href="#">Learn More ➜</a>
+      </div>
+    </div>
+  </section>
+<!-- FAQ Section -->
+<section class="faq-section py-5 px-4 bg-light">
+  <div class="container">
+    <h2 class="text-center mb-5 fw-bold">Frequently Asked Questions</h2>
+    <div class="row">
+      <div class="col-md-6">
+        <h5><em>What is Xrays.AI for?</em></h5>
+        <p>Xrays.AI provides a preliminary AI-powered interpretation of uploaded radiology images. It’s designed to help users better understand their scans, but it’s not a substitute for professional medical advice or diagnosis.</p>
+
+        <h5><em>I got a lot of images from my doctor — how do I choose which ones for AI analysis?</em></h5>
+        <p>Radiology scans often come as DICOM files with hundreds or thousands of image slices. Choose 3–5 representative images that show the area of concern. If possible, include different views (sagittal, axial, coronal). <a href="#">Full guide</a></p>
+
+        <h5><em>How accurate is Xrays.AI's analysis?</em></h5>
+        <p>Our system uses advanced AI and provides a high degree of accuracy. Like all automated systems, it’s not infallible. Always consult a medical professional for a definitive diagnosis. <a href="#">Terms and Conditions</a></p>
+
+        <h5><em>What types of images can Xrays.AI analyze?</em></h5>
+        <p>Xrays.AI supports X-rays, CT scans, MRIs, and ultrasounds. It accepts DICOM files and common formats like PDF, PNG, and JPEG.</p>
+
+        <h5><em>What is the relationship between Xrays.AI and X-ray Interpreter?</em></h5>
+        <p>Xrays.AI is a sub-brand of X-ray Interpreter, built on the same platform offering the same AI-powered imaging interpretation service. <a href="#">Main site</a></p>
+      </div>
+
+      <div class="col-md-6">
+        <h5><em>How do I use Xrays.AI to interpret my medical images?</em></h5>
+        <p>Just upload clear radiology images using our secure uploader. Xrays.AI will analyze them instantly and return a detailed preliminary interpretation within seconds.</p>
+
+        <h5><em>How long does the analysis take?</em></h5>
+        <p>Our average analysis time is 5.5 seconds, with results delivered instantly through our secure platform. This includes findings and suggested interpretations.</p>
+
+        <h5><em>Is my data secure?</em></h5>
+        <p>Absolutely! Uploaded radiology images are securely stored and viewable only by you. You can delete them anytime after logging in.</p>
+
+        <h5><em>Can Xrays.AI be used for more than just X-rays?</em></h5>
+        <p>Yes. Xrays.AI supports MRI, CT, and Ultrasound scans — offering comprehensive AI interpretation across modalities.</p>
+      </div>
+    </div>
+  </div>
+</section>
+  <!-- Footer -->
+<footer class="footer">
+  <div class="footer-logo">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/Font_Awesome_5_solid_shield-alt.svg" alt="Logo" class="footer-icon" />
+    <span>CareCast.ai</span>
+  </div>
+  <hr />
+  <!-- Footer Support -->
+    <div data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-root-margin="0px 0px -40%" data-bs-smooth-scroll="true" class="scrollspy-example bg-body-tertiary p-3 rounded-2" tabindex="0">
+      <h4 id="scrollspyHeading1">Support</h4>
+      <!-- Support Section -->
+        <section class="support-section py-5 bg-light">
+          <div class="container">
+            <h2 class="text-center mb-4 fw-bold">Need Help? We're Here for You</h2>
+            <p class="text-center mb-5 text-muted">Our support team is available 24/7 to help you with questions, concerns, or issues.</p>
+
+            <div class="row g-4">
+              <!-- Contact Card -->
+              <div class="col-md-4">
+                <div class="card h-100 text-center p-4 shadow-sm">
+                  <div class="card-body">
+                    <h5 class="card-title">📩 Email Support</h5>
+                    <p class="card-text">Send us a message at:</p>
+                    <a href="mailto:support@carecast.ai" class="btn btn-outline-primary btn-sm">support@carecast.ai</a>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Live Chat Card -->
+              <div class="col-md-4">
+                <div class="card h-100 text-center p-4 shadow-sm">
+                  <div class="card-body">
+                    <h5 class="card-title">💬 Live Chat</h5>
+                    <p class="card-text">Talk to our virtual assistant or support team instantly.</p>
+                    <a href="#" class="btn btn-outline-success btn-sm">Start Chat</a>
+                  </div>
+                </div>
+              </div>
+
+              <!-- FAQ Card -->
+              <div class="col-md-4">
+                <div class="card h-100 text-center p-4 shadow-sm">
+                  <div class="card-body">
+                    <h5 class="card-title">❓FAQs</h5>
+                    <p class="card-text">Find answers to the most commonly asked questions.</p>
+                    <a href="#faq" class="btn btn-outline-secondary btn-sm">Visit FAQ</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+    </div>
+    <br>
+    <!-- Footer Feedback -->
+    <div data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-root-margin="0px 0px -40%" data-bs-smooth-scroll="true" class="scrollspy-example bg-body-tertiary p-3 rounded-2" tabindex="0">
+      <h4 id="scrollspyHeading2">Feedback</h4>
+        <form class="mt-3">
+          <div class="mb-3">
+            <label for="feedbackMessage" class="form-label">Your Feedback</label>
+            <textarea class="form-control" id="feedbackMessage" rows="4" placeholder="Share your thoughts..."></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary">Submit Feedback</button>
+        </form>
+
+    </div>
+    <!-- Footer -->
+  <div class="footer-bottom">
+    <div class="social">
+      <span>Follow Us:</span>
+      <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/733/733547.png" alt="Facebook" /></a>
+      <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="LinkedIn" /></a>
+      <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/1384/1384060.png" alt="YouTube" /></a>
+    </div>
+    <p>© 2025 All Rights Reserved</p>
+  </div>
+
+  <!-- Floating Button -->
+  <a href="mailto:support@carecast.ai" class="float-mail" title="Contact Us">
+    ✉️
+  </a>
+</footer>
+
+</body>
+</html>

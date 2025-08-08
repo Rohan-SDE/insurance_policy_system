@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Login UI</title>
+<link rel="stylesheet" href="style2.css" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+
+</head>
+<body>
+  <main class="background-container" role="main" aria-label="Login form on mountain background">
+    <form class="login-form" action="#" method="POST" novalidate aria-describedby="register-text">
+      <h2>Login</h2>
+
+      <div class="input-group">
+        <input type="email" id="email" name="email" placeholder="Email ID" autocomplete="email" required aria-required="true" aria-label="Email ID" />
+        <svg class="icon" aria-hidden="true" viewBox="0 0 24 24" focusable="false"><path d="M1.5 4.5h21v15h-21z" fill="none"/><path d="M3 6.75v10.5h18V6.75L12 13.5 3 6.75zM12 12L21 6H3l9 6z" /></svg>
+      </div>
+
+      <div class="input-group">
+        <input type="password" id="password" name="password" placeholder="Password" autocomplete="current-password" required aria-required="true" aria-label="Password" />
+        <svg class="icon" aria-hidden="true" viewBox="0 0 24 24" focusable="false"><path d="M12 17a2 2 0 1 0 0-4 2 2 0 0 0 0 4zm6-5v-4a6 6 0 1 0-12 0v4a3 3 0 0 0-3 3v5h18v-5a3 3 0 0 0-3-3zm-8-4a4 4 0 1 1 8 0v4H10v-4z"/></svg>
+      </div>
+
+      <div class="options-row">
+        <label for="remember">
+          <input type="checkbox" id="remember" name="remember" />
+          Remember me
+        </label>
+        <a href="#" tabindex="0">Forgot Password?</a>
+      </div>
+
+      <button type="submit" class="login-btn">Login</button>
+
+      <div id="register-text" class="register-text">
+        Don't have an account? <a href="#" tabindex="0">Register</a>
+      </div>
+
+      <hr style="margin: 1.5rem 0; border-color: rgba(255,255,255,0.3);">
+
+      <!-- Social Login Buttons -->
+      <div class="social-login">
+        <p style="text-align:center; margin-bottom: 1rem;">Login with</p>
+        <div class="social-icons">
+          <a href="#" class="social-icon google" title="Login with Google"><i class="bi bi-google"></i></a>
+          <a href="#" class="social-icon facebook" title="Login with Facebook"><i class="bi bi-facebook"></i></a>
+          <a href="#" class="social-icon instagram" title="Login with Instagram"><i class="bi bi-instagram"></i></a>
+          <a href="#" class="social-icon twitter" title="Login with Twitter"><i class="bi bi-twitter"></i></a>
+        </div>
+      </div>
+    </form>
+  </main>
+</body>
+</html>
